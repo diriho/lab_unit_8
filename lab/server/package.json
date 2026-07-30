@@ -5,8 +5,8 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "npm run reset && nodemon --require dotenv/config server.js",
-    "reset": "cd config && node --require dotenv/config reset.js"
+    "start": "npm run reset && nodemon --require config/dotenv server.js",
+    "reset": "cd config && node --require config/dotenv reset.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
