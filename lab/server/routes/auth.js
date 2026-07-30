@@ -37,8 +37,8 @@ router.get('/logout', function(req, res, next) {
 router.get('/github', passport.authenticate('github', { scope: [ 'read:user' ] }))
 
 router.get('/github/callback', passport.authenticate('github', {
-        successRedirect: '/',
-        failureRedirect: '/destinations',
+        successRedirect: 'https://client-042f.onrender.com',
+        failureRedirect: 'https://client-042f.onrender.com/destinations',
     })
 )
 
