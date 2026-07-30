@@ -5,12 +5,12 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "npm run reset && nodemon --require config/dotenv server.js",
-    "reset": "cd config && node --require config/dotenv reset.js"
+    "start": "npm run reset && nodemon --require dotenv/config server.js",
+    "reset": "cd config && node --require dotenv/config reset.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^16.6.1",
+    "dotenv": "^16.1.4",
     "express": "^4.18.2",
     "express-session": "^1.17.3",
     "nodemon": "^2.0.20",
